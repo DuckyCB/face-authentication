@@ -1,4 +1,5 @@
 import cv2
+import os
 
 from names import add_name
 
@@ -17,6 +18,9 @@ while True:
 
     cv2.putText(frame, "Saving new face, please wait", (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 1,
                 (255, 255, 255), 2)
+
+    if not os.path.exists("datasets"):
+        os.makedirs("datasets")
 
     for (x, y, w, h) in faces:
         count = count + 1

@@ -1,9 +1,12 @@
-
+# Python
 /venv
 /__pycache__
 
+# Ide
 /.idea
 
+# Project
 /datasets
 Trainer.yml
+names.json
 
