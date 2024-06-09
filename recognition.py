@@ -40,9 +40,7 @@ while time.time() - start_time < timeout:
     k = cv2.waitKey(1)
 
     if k == ord('o') and conf > 50:
-        print("0")
         time.sleep(10)
-        print("1")
     if k == ord("q"):
         break
 
